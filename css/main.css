@@ -1,0 +1,329 @@
+
+* {margin: 0; padding: 0; box-sizing: content-box!important;}
+
+body 
+{
+	background: url("../images/different/catalogue-bg.jpg");
+	font-family: georgia, 'Carrois Gothic SC', sans-serif; font-size: 1rem;
+}
+
+h2,h3,h4,h5,h6 
+{
+	font-family: 'Carrois Gothic SC', sans-serif;
+	font-size: 1.5rem;
+}
+
+#company-logo-wrapper
+{
+	max-width: 1200px; 
+	margin: 0 auto;
+	display: flex; justify-content: space-between; align-items: center;
+}
+
+#wrapper 
+{
+	max-width: 992px;
+	margin: 0 auto;
+}
+
+/*backgrounds*/
+
+#header 
+{
+	width: 100%;
+	height: 80vh; 
+	position: relative;
+	border-bottom: 20px solid #1D5635;
+}
+
+#intro 
+{
+	background: #fff;
+}
+
+#features 
+{
+	background: #1D5635;
+	color: #fff;
+}
+
+#catalogue 
+{
+	background: #fff;
+}
+
+#footer 
+{
+	height: 50vh;
+	background: #1D5635;
+}
+
+/*Intro*/
+
+.intro-inner 
+{
+	padding: 100px 0 30px 0;
+	display: flex; justify-content: space-between; align-items: center;
+	height: 400px;
+}
+
+.intro-text 
+{
+	display: flex; 
+	flex-direction: column;
+	flex-basis: 80%;
+	padding: 30px;
+	color: #1D5635;
+}
+
+.intro-text > h2 
+{
+	font-size: 2rem;
+}
+
+.intro-text > p 
+{
+	padding: 30px 0;
+	font-size: 18px;
+}
+
+.intro-logo {
+	padding: 30px;
+	width: 350px;
+}
+
+.intro-logo > img {
+	width: 100%;
+}
+
+/*features*/
+
+.features-inner 
+{
+	display: flex; justify-content: space-between;
+	padding: 100px 0 100px 0;
+}
+
+.features-item 
+{
+	text-align: center;
+	flex-basis: 30%;
+}
+
+.features-item > p 
+{
+	padding: .9rem 0;
+}
+
+/*Catalogue*/
+
+.catalogue-inner 
+{
+	display: flex;
+	padding: 70px 0 70px 0;
+}
+
+.catalogue-text 
+{
+	width: 60%;
+	color: #1D5635;
+}
+
+.catalogue-text > h4 
+{
+	margin: 10px 0;
+}
+
+.catalogue-text > p 
+{
+ 	padding-bottom: 1rem;
+}
+
+.catalogue-image 
+{
+	padding: 1.2rem 0;
+	display: flex;
+	width: 500px;
+	height: 500px;
+}
+
+.catalogue-image > img 
+{	
+	margin: 0 85px;
+	align-self: center;
+	width:  100%;
+	height: 500px;
+	object-fit: contain;
+	transition: all 1s ease-out;		
+}
+
+.catalogue-image > img:hover 
+{
+	transition: .7s ease-in;
+	transform: scale(1.1);
+}
+
+
+/*Horizontal line*/
+
+.horizontal-line 
+{
+	padding: 100px 0;
+	background: #1D5635;
+	display: flex; justify-content: center; 
+	border-top: 10px #1D563599 solid;
+	border-bottom: 10px #1D563599 solid;
+
+
+}
+
+.horizontal-line > h2 
+{
+	color: #fff;
+	font-size: 70px;
+}
+
+
+/*Catalogue-list*/
+
+.catalogue-list 
+{
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	padding: 80px 0 30px 0;;
+}
+
+.catalogue-card 
+{
+	width: 200px;
+	height: 220px;
+	margin: 3rem 0;
+	border: 1px solid #1D563599;
+	position: relative;
+}
+
+.catalogue-card:after
+{
+	content: "500$";
+	display: block;
+	font-size: 14px;
+	position: absolute;
+	top: -7px;
+	left: -20px;
+	padding: 5px 12px;
+	color: #fff;
+	background: #F87608;
+	transform: rotate(330deg);
+	border-radius: 20px;
+}
+
+
+.card-image > a > img 
+{	
+	display: flex;
+	width: 200px;
+	height: 220px;
+	object-fit: cover;
+}
+
+.card-button 
+{
+	background: #fff;
+	display: flex; justify-content: center;
+	width: 50%;
+	height: 30px;
+	margin: 0 auto; margin-top: -14px;
+}
+
+.card-button > a 
+{	
+	display: flex; justify-content: center; align-items: center;
+	width: 100%;
+	height: 100%;
+	text-decoration: none!important;
+	color: #fff!important;
+	text-align: center;
+	background: #73b55F;
+	transition: 1s ease-out;
+	border-radius: 20px;
+}
+
+.card-button > a:hover 
+{	
+	transition: .4s ease-in;
+	background: #F87608;
+}
+
+
+
+/*navbar*/
+
+nav 
+{
+	background: #ffffffcc;
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	z-index: 1000;
+}
+
+.company-logo > a > img 
+{
+	width: 250px;
+}
+
+.company-phone > a
+{
+	color: #1D8031!important;
+	margin-left: 12px;
+}
+
+
+/*slider*/
+
+.carousel-indicators 
+{
+	background: ;
+	top: 100%;
+}
+
+.carousel-indicators li 
+{
+	background-color: #fff!important;
+}
+
+ .carousel-control-prev,.carousel-control-next 
+{
+	width: 5%!important;
+
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon
+{
+	width: 30px!important;
+	height: 30px!important;
+}
+
+.slide-photo 
+{
+	width: 100%;
+	height: 80vh;
+	object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
